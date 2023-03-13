@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/forms.css">
+    <title>Datos</title>
+</head>
+<body class="bg-red">
+    <div class="board">
+        <div class="title">            
+        </div>
+        <div class=" body">
+            <form action="#" id="form" class="form" method="get">
+                <label class="text" for="user">Nombre</label>
+                <input class="form-control" type="text" required name="user" minlength="5" id="user" placeholder="Nombre">
+                <label class="text" for="email">Correo</label>
+                <input class="form-control" type="email" required name="email" minlength="5" id="email" placeholder="Correo">
+                <label class="text" for="password">Contraseña</label>
+                <input class="form-control" type="password" required  minlength="6" name="password" id="password" placeholder="Contraseña">
+                <label class="text" for="password2">Confirmar Contraseña</label>
+                <input class="form-control" type="password" required minlength="6" name="confirmPassword" id="confirmPassword" placeholder="Confirmar Contraseña">
+                <button class="btn btn-primary send" type="submit">Enviar</button>
+                <button  type="button"class="btn btn-secondary" onclick="volver()">Regresar</a>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/components/forms.js"></script>
+
+</body>
+</html>

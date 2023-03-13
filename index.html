@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="assets/js/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="assets/css/forLogin.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader ">
+        <div class="loader__container ">
+            <span></span>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="./" class="nav__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="logo__icon">
+                    <path fill="currentColor"
+                        d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                    </path>
+                </svg>
+            </a>
+
+            <div class="nav__menu">
+                <button class="nav__btn btn__close" type="button">
+                    <i class="bx bx-x"></i>
+                </button>
+
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Productos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__buttons">
+                <button class="nav__btn btn__cart" type="button">
+                    <i class="bx bx-shopping-bag "></i>
+                    <span class="notify">0</span>
+                </button>
+                <button class="nav__btn btn__menu gri" type="button">
+                    <i class="bx bxs-grid-alt"></i>
+                </button>
+                <button class="nav__btn btn__login" type="button">
+                    <i class='bx bx-user-circle'></i>
+                    
+                </button>
+                
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+        <section class="products section">
+            <h2 class="products__title section__title">Productos</h2>
+            <div class="products__container container">                
+            </div>
+        </section>
+    </main>
+    <!-- Login -->
+    <div class="login">
+        <div class="cart__container">
+            <div class="cart__header">
+                <h3 class="login__title">Log In</h3>
+                <button type="button" class="cart__btn btn__close">
+                    <i class="bx bx-x"></i>
+                </button>
+            </div>
+            <div class="login__body">
+                
+                <!-- <div class="cart__empty">
+                    <i class="bx bx-cart"></i>
+                    <p class="cart__empty__text">No hay productos en el carrito</p>
+                </div> -->
+            </div>
+            
+        </div>
+    </div>
+    <!-- Cart -->
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__header">
+                <h3 class="cart__title">Carrito de Compras</h3>
+                <button type="button" class="cart__btn btn__close">
+                    <i class="bx bx-x"></i>
+                </button>
+            </div>
+            <div class="cart__body">
+                
+                <!-- <div class="cart__empty">
+                    <i class="bx bx-cart"></i>
+                    <p class="cart__empty__text">No hay productos en el carrito</p>
+                </div> -->
+            </div>
+            <div class="cart__footer">
+                <div class="cart__count">
+                    <span class="cart__count__text">Articulos</span>
+                    <span class="cart__count__item">0</span>
+                </div>
+                <div class="cart__total">
+                    <span class="cart__count__text">Total</span>
+                    <span class="cart__total__item">$0</span>
+                </div>
+                <button type="button" class="cart__btn btn__buy">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer section">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <h3 class="footer__title">Sobre Nosotros</h3>
+                    <p class="footer__text">Disfruta de nuestra web visualiza, compara y compra. Soy Jeimy Ariel Jara Bautista, me dedico al desarrollo Web y estoy buscando profesionalizarme</p>
+                </div>
+                <div class="footer__right">
+                    <h3 class="footer__title">Redes Sociales</h3>
+                    <ul class="footer__social">
+                        <li class="footer__item">
+                            <a href="https://github.com/Einzas" target="_blank" class="footer__link">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.facebook.com/jeimyjara1/" target="_blank" class="footer__link">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.linkedin.com/in/jeimy-jara-bautista-37383a240/" target="_blank" class="footer__link">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer_text">Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/helpers/doLogin.js"></script>
+</body>
+
+</html>
+
+
+
