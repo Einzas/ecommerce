@@ -26,7 +26,7 @@ const login = () => {
           showConfirmButton: false,
         });
       } else {
-        if (data.auth === true) {
+        if (response.auth === true) {
           localStorage.setItem("token", data.token);
           localStorage.setItem("login", true);
           localStorage.setItem("user", data.user);
