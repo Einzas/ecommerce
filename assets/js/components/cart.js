@@ -207,7 +207,7 @@ const discountMoney = async (money) => {
   console.log(money);
   actualMoney = parseInt(actualMoney);
   const id = decoderToken(localStorage.getItem("token")).id;
-  const response = await fetch(`http://carrito.herokuapp.com/api/v1/auth/user/${id}`, {
+  const response = await fetch(`https://carrito.herokuapp.com/api/v1/auth/user/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
