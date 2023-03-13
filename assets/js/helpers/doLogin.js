@@ -32,7 +32,7 @@ const login = () => {
       });
       
       setInterval(() => {
-        window.location.reload();
+        window.location.href = "./";
       }, 1600);
     } else {
       Swal.fire({
